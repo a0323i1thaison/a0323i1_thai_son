@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen_doi_tien_te</title>
+</head>
+<body>
+<table>
+        <form>
+            <td><strong> Amountd :</strong></td>
+            <td><input id="am" type="text"></td>
+            <td>
+                <strong>From Currency:</strong>
+                <select id="fc">
+                    <option value="fc" >VNĐ
+                </select>
+            </td>
+            <td>
+                <strong> To Currency:</strong>
+                <select id="tc">
+                    <option value="tc" >USD
+                </select>
+
+            </td>
+            <td><button type="button" onclick="cv()">Convert</button></td>
+            <tr>
+                <td><h1 id="rs"></h1></td><br><br>
+            </tr>
+        </form>
+</table>
+<script>
+    function cv(){
+        let am=document.getElementById("am").value;
+        let result= am / 23000;
+        document.getElementById("rs").innerText=result;
+    }
+</script>
+
+</body>
+</html>

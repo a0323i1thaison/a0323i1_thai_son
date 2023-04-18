@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--bai1-->
+<!--<form>-->
+<!--    Điểm toán : <input id="maths" type="text"><br><br>-->
+<!--    Điểm lý :   <input id="physical" type="text"><br><br>-->
+<!--    Điểm hóa :  <input id="chemistry" type="text"><br><br>-->
+<!--    <button type="button" onclick="dtb()">Điểm Trung Bình </button><br><br>-->
+<!--    <button type="button" onclick="add()">Điểm tổng </button><br><br>-->
+<!--    <h1 id="rs"></h1>-->
+<!--</form>-->
+<!--<script>-->
+<!--     function dtb() {-->
+<!--         let maths = document.getElementById("maths").value;-->
+<!--         let physical = document.getElementById("physical").value;-->
+<!--         let chemistry = document.getElementById("chemistry").value;-->
+<!--         let result = ( parseInt(maths) + parseInt(physical) + parseInt(chemistry) )/3;-->
+<!--         document.getElementById("rs").innerText = result;-->
+<!--     }-->
+<!--     function add() {-->
+<!--         let maths = document.getElementById("maths").value;-->
+<!--         let physical = document.getElementById("physical").value;-->
+<!--         let chemistry = document.getElementById("chemistry").value;-->
+<!--         let result = parseInt(maths) + parseInt(physical) + parseInt(chemistry);-->
+<!--         document.getElementById("rs").innerText = result;-->
+<!--     }-->
+<!--//  </script>-->
+<!--    bai2-->
+<!--    <form>-->
+<!--        ĐộC (Celsius):<input id="dc" type="number">-->
+<!--        <button type="button" onclick="rs()">Chuyển đổi</button>-->
+<!--        <h1 id="df"></h1>-->
+<!--        <script>-->
+<!--            function rs() {-->
+<!--                let  dc = document.getElementById("dc").value;-->
+<!--                let result = (9*dc/5)+32;-->
+<!--                document.getElementById("df").innerText= result;-->
+<!--            }-->
+<!--//         </script>-->
+<!--    //-->
+<!--    // </form>-->
+<!--//    bai3-->
+<center>
+    <form>
+            Nhập bán kính hình tròn :<input id="bk" type="number">
+        <button type="button" onclick="cv()">Tính chu vi</button>
+        <button type="button" onclick="dt()">Tính diện tích </button>
+        <h1 id="kq"></h1>
+    </form>
+</center>
+<script>
+    function cv() {
+        let bk = document.getElementById("bk").value;
+        const PI = 3.1416;
+        let result = 2*bk*PI;
+        document.getElementById("kq").innerText= result
+    }
+    function dt() {
+        let bk = document.getElementById("bk").value;
+        const PI = 3.1416;
+        let result = bk*bk*PI;
+        document.getElementById("kq").innerText= result
+    }
+</script>
+</body>
+</html>

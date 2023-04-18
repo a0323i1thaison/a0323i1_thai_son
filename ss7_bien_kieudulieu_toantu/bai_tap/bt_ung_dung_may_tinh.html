@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h1>Caculator</h1>
+    <input name="number1" type="number" id="nbm"> <input type="number" name="number2" id="nbh"><br><br>
+    <div> <button type="button" onclick="add()" >Addition(+)</button>
+    <button type="button" onclick="stt()" >Subtraction(-)</button>
+    <button type="button" onclick="mll()" >Multiplication(X)</button>
+    <button type="button" onclick="dvs()">Division(/)</button>
+    </div>
+    <h1 id="result"></h1>
+    <script>
+        function add(){
+            let numberf= document.getElementById("nbm").value;
+            let numbers= document.getElementById("nbh").value;
+            let result= parseInt(numberf) + parseInt(numbers);
+            document.getElementById("result").innerText=result;
+        }
+        function stt(){
+            let numberf= document.getElementById("nbm").value;
+            let numbers= document.getElementById("nbh").value;
+            let result= parseInt(numberf) - parseInt(numbers);
+            document.getElementById("result").innerText=result;
+        }
+        function mll(){
+            let numberf= document.getElementById("nbm").value;
+            let numbers= document.getElementById("nbh").value;
+            let result= parseInt(numberf) * parseInt(numbers);
+            document.getElementById("result").innerText=result;
+        }
+        function dvs(){
+            let numberf= document.getElementById("nbm").value;
+            let numbers= document.getElementById("nbh").value;
+            let result= parseInt(numberf) / parseInt(numbers);
+            document.getElementById("result").innerText=result;
+        }
+    </script>
+</form>
+</body>
+</html>
