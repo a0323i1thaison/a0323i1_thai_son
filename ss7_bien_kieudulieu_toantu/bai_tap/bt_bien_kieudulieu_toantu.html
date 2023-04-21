@@ -47,9 +47,9 @@
 <!--//    bai3-->
 <center>
     <form>
-            Nhập bán kính hình tròn :<input id="bk" type="number">
+        Nhập bán kính hình tròn :<input id="bk" type="number">
         <button type="button" onclick="cv()">Tính chu vi</button>
-        <button type="button" onclick="dt()">Tính diện tích </button>
+        <button type="button" onclick="dt()">Tính diện tích</button>
         <h1 id="kq"></h1>
     </form>
 </center>
@@ -57,14 +57,15 @@
     function cv() {
         let bk = document.getElementById("bk").value;
         const PI = 3.1416;
-        let result = 2*bk*PI;
-        document.getElementById("kq").innerText= result
+        let result = 2 * bk * PI;
+        document.getElementById("kq").innerText = result
     }
+
     function dt() {
         let bk = document.getElementById("bk").value;
         const PI = 3.1416;
-        let result = bk*bk*PI;
-        document.getElementById("kq").innerText= result
+        let result = bk * bk * PI;
+        document.getElementById("kq").innerText = result
     }
 </script>
 </body>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_1</title>
+</head>
+<body>
+<form method="post">
+    <div>Chuyển từ độ C sang độ F : <input type="number" id="cf">
+        <button type="button" onclick="add()">Chuyển</button>
+    </div>
+    <div>Chuyển từ độ F sang độ C : <input type="number" id="fc">
+        <button type="button" onclick="acc()">chuyển</button>
+    </div>
+    <h1 id="result"></h1>
+ </form>
+<script>
+    function add() {
+        let cf =document.getElementById("cf");
+        let sumit = ((cf-32)/9/5);
+        document.getElementById("result").innerText=sumit;
+
+    }
+</script>
+</body>
+</html>
