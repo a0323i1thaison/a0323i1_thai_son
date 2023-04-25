@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập vào số thực a của phương trình :");
+    let b = +prompt(" Nhập vào số thực b của phương trình :");
+    let result = -b / a;
+    if (a == 0 && b == 0) {
+        alert("Phương trình có vô nghiệm");
+    } else if (a == 0 && b !== 0) {
+        alert("phương trình vô nghiệm");
+    } else if (a !== 0) {
+        alert("Phương trình có một nghiệm duy nhất : " + result);
+    }
+</script>
+</body>
+</html>

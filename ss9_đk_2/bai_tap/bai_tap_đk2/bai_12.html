@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_12</title>
+</head>
+<body>
+<script>
+    let stv = +prompt("nhập vào số tiền vay");
+    let snv = +prompt("nhập vào số năm vay");
+    let lx = +prompt("nhập vào lãi suất ");
+    for (i = 0; i < snv ; i++){
+        stv = ((stv/snv*12)+(stv*lx/100*12));
+    }
+    alert (" số tiền bạn phải trả là " + stv);
+</script>
+</body>
+</html>

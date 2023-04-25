@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_7</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập vào số a ");
+    let b = +prompt("nhập vào số b ");
+    let c = +prompt("nhập vào số c ");
+    let dt = (b * b - 4 * a * c);
+    let nk = -b / 2 * a;
+    let n1 = (-b + Math.sqrt(dt)) / 2 * a;
+    let n2 = (-b - Math.sqrt(dt)) / 2 * a;
+    if (dt < 0) {
+        alert("phương trình vô nghiệm");
+    } else if (dt == 0) {
+        alert(" phương trình có nghiệm kép" + nk);
+    } else if (dt > 0) {
+        alert(" phương trình có 2 nghiệm :" + "nghiệm 1 :" + n1 + "nghiệm 2" + n2);
+    }
+</script>
+</body>
+</html>

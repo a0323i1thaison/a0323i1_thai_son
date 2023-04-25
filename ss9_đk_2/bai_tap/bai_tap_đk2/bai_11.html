@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_11</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập vào số thu nhập cảu bạn ");
+    let a1 = a * 10 / 100;
+    let a2 = a * 15 / 100;
+    let a3 = a * 20 / 100;
+    if (a > 5 && a <= 10) {
+        alert(" số tiền thuế bạn phải nộp là " + a1);
+    } else if (a > 10 && a <= 18) {
+        alert(" số tiền thuế bạn phải nộp là " + a2);
+    } else if (a > 18 && a <= 32) {
+        alert(" số tiền thuế bạn phải nộp là " + a3);
+    }
+</script>
+</body>
+</html>

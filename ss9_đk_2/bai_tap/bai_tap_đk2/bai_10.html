@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_10</title>
+</head>
+<body>
+<script>
+    let sd = +prompt("nhập vào số điện bạn đã sữ dụng ");
+    let sd1 = sd * 600;
+    let sd2 = sd * 700;
+    let sd3 = sd * 900;
+    let sd4 = sd * 1100;
+    if (sd < 100) {
+        alert("số tiền bạn phải trả là :" + sd1);
+    } else if (sd > 101 && sd < 150) {
+        alert("số tiền bạn phải trả là :" + sd2);
+    } else if (sd > 151 && sd < 200) {
+        alert("số tiền bạn phải trả là :" + sd3);
+    } else if (sd > 201) {
+        alert("số tiền bạn phải trả là :" + sd4);
+    }
+</script>
+</body>
+</html>

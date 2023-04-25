@@ -5,22 +5,29 @@
     <title>bai_1</title>
 </head>
 <body>
-<form method="post">
+<form>
     <div>Chuyển từ độ C sang độ F : <input type="number" id="cf">
         <button type="button" onclick="add()">Chuyển</button>
     </div>
+    <br>
     <div>Chuyển từ độ F sang độ C : <input type="number" id="fc">
         <button type="button" onclick="acc()">chuyển</button>
     </div>
     <h1 id="result"></h1>
- </form>
+</form>
 <script>
     function add() {
-        let cf =document.getElementById("cf");
-        let sumit = ((cf-32)/9/5);
-        document.getElementById("result").innerText=sumit;
-
+        let cf = document.getElementById("cf").value;
+        let sumit1 = (cf * 9 / 5 + 32);
+        document.getElementById("result").innerText = sumit1;
     }
+
+    function acc() {
+        let fc = document.getElementById("fc").value;
+        let sumit2 = ((fc - 32) * 5 / 9);
+        document.getElementById("result").innerText = sumit2;
+    }
+
 </script>
 </body>
 </html>
