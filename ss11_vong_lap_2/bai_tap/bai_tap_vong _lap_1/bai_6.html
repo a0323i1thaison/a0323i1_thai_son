@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_6</title>
+</head>
+<body>
+<script>
+    let add = 0;
+    let soTT = 1;
+    for (i = 0; i <= 10000; i++) {
+        if (i % 7 == 0 && soTT<=30) {
+            document.write(soTT + "." +  i + "<br>");
+            add = i + add;
+            soTT++;
+        }
+    }
+    document.write("tổng 30 số tự nhiên chia hết cho 7 là : " + add);
+</script>
+</body>
+</html>

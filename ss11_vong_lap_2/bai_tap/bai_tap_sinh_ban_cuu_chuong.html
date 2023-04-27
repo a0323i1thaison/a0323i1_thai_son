@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_tap_cuu_chuong</title>
+</head>
+<body>
+<center>
+    <script>
+        let bcc = '<table border="1">';
+        for (let i = 1; i <= 10; i++) {
+            bcc += '<tr>'
+            for (let j = 1; j < 10; j++) {
+                bcc += '<td>' + j + 'x' + i + '=' + (i * j) + '</td>';
+            }
+            bcc += '</tr>'
+        }
+        bcc += '</table>'
+        document.writeln(bcc);
+    </script>
+</center>
+</body>
+</html>
