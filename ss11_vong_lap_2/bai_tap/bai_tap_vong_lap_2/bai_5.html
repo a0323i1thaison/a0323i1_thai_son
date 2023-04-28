@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_5</title>
+</head>
+<body>
+<script>
+    let soTvay = +prompt(" Nhập vào số tiền bạn vay ");
+    let soTlai = +prompt(" Nhập vào số tiền lãi phải trả hằng tháng của bạn ");
+    let soThgVay = +prompt(" Nhập vào số tháng bạn vay ");
+    for (i = 1; i <= soThgVay; i++) {
+        add = soTvay + soTlai;
+       soTvay = add ;
+    }
+    document.write(" Số tiền bạn phải trả cả gốc lẫn lãi là :" + add);
+</script>
+</body>
+</html>

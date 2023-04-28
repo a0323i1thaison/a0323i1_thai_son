@@ -5,8 +5,31 @@
     <title>bai_8</title>
 </head>
 <body>
+<center>
+    <h1> GAME Đoán Số </h1><br><br><br>
+    <h2>lựa chọn khoảng chơi</h2>
+    <div>
+        <p> Level ( 1 - 100 ) </p>
+        <input type="number" id="level" min="1" max="100">
+    </div>
+    <div>
+        <button type="button" value="start" onclick="bd()"> start</button>
+    </div>
+    <br>
+    <h1 id="result"></h1>
+</center>
 <script>
-    
+    let randomNum = Math.floor(Math.random() * 100) + 1;
+    function bd() {
+        let num = +prompt("Nhập kết quả của bạn");
+        if (randomNum == num) {
+            document.getElementById("result").innerText = " YOU WIN ";
+        } else if (randomNum > num) {
+            document.getElementById("result").innerText = " Too low , you try again ";
+        } else if (randomNum > num) {
+            document.getElementById("result").innerText = " Too high , you try again ";
+        }
+    }
 </script>
 </body>
 </html>
