@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuc_hanh_2</title>
+</head>
+<body>
+<script>
+    let x = [ -3,7,8,9,11,3,4 ];
+    let num1 = 0;
+    let numl = x.length - 1;
+    while (num1 < numl ){
+        let b = x[num1];
+        x[num1] = x[numl];
+        x[numl] = b;
+        num1++;
+        numl--;
+    }document.write(x);
+</script>
+</body>
+</html>
