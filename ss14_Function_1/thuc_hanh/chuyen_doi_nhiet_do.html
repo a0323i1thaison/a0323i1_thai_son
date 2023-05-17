@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen_doi_nhiet_do</title>
+</head>
+<body>
+<form>
+    <h1> Chuyển đổi nhiệt độ </h1>
+    <input id=nhapNhietDo type="number" placeholder="nhập nhiệt độ"
+           oninput="chuyenDoi(this.value)"
+           onchange="chuyenDoi(this.value)">
+    <h2 id="result"></h2>
+</form>
+<script>
+    function chuyenDoi(valNum){
+        valNum = parseFloat(valNum);
+        document.getElementById("result").innerHTML = ""+ (valNum - 32) / 1.8;
+    }
+</script>
+</body>
+</html>

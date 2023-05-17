@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function1_bai_2</title>
+</head>
+<body>
+<input type="number" id="num">
+<button type="button" onclick=" clickMe() " >click here</button>
+<h1 id="result"></h1>
+<script>
+    function clickMe() {
+        let num = document.getElementById('num').value;
+        let add = ++num;
+        document.getElementById("result").innerHTML =add;
+    }
+</script>
+</body>
+</html>

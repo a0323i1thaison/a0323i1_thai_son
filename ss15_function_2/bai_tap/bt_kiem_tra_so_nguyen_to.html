@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem_tra_so_nguyen_to</title>
+</head>
+<body>
+<script>
+    function number(a) {
+        if (a % 1 == 0 && a % a == 0 && a !== 1) {
+            alert( a  + " là một số nguyên tố");
+        } else {
+            alert ( a + " ko phải là 1 số nguyên tố");
+        }
+        return a
+    }
+    let num = +prompt( " nhập vào một số nguyên ");
+    number(num);
+</script>
+</body>
+</html>

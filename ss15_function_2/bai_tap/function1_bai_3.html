@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_3</title>
+</head>
+<body>
+<h1 id="result"></h1>
+<script>
+    function num(a, b) {
+        if (a > b) {
+            alert(" tham số thứ nhất lớn hơn tham số thứ hai");
+        } else {
+            return a + b
+        }
+    }
+    let num1 = +prompt(" nhập vào tham số thứ nhất");
+    let num2 = +prompt(" truyền vào tham số thứ hai");
+    let add = num(num1, num2);
+    document.getElementById("result").innerText = add;
+</script>
+</body>
+</html>

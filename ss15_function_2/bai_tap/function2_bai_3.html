@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_3_function2</title>
+</head>
+<body>
+<script>
+    function tichGiaiThua(num){
+        let giaiThua = 1 ;
+        for (let i = 1; i <= num ; i++ ){
+            giaiThua *= i ;
+            return giaiThua ;
+        }
+    }
+    let num1 = +prompt( " nhập vào một số nguyên ");
+    let num2 = tichGiaiThua(num1);
+    alert (" số được nhân giai thừa là :" + num2 );
+</script>
+</body>
+</html>

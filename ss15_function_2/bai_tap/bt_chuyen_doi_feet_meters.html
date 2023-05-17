@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> chuyen_doi_giua_feet_meters</title>
+</head>
+<body>
+    <div> <h2>nhập vào số muốn chuyển </h2>
+        <input type="number"id="num"><br><br>
+        <button type="button" onclick= " ftoM() ">Chuyển từ Feet sang Meters</button>
+        <button type="button" onclick= " mtoF() ">Chuyển từ Meters sang Feet</button>
+    </div>
+   <h1 id="result"></h1>
+<script>
+    function ftoM() {
+        let feet = document.getElementById('num').value;
+        let meters = 0.305 * parseInt( feet );
+        document.getElementById('result').innerHTML= meters;
+    }
+    function mtoF() {
+        let meters = document.getElementById('num').value;
+        let feet = 3.279 * parseInt( meters );
+        document.getElementById("result").innerHTML= feet;
+    }
+</script>
+</body>
+</html>

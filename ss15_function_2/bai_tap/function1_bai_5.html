@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_5</title>
+</head>
+<body>
+<h1 id="result"></h1>
+<script>
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", " Leo"];
+    function sao( starName) {
+        for (let i = 0; i < arr1.length; i++) {
+            if ( arr1[i] === starName){
+                return arr2[i];
+            }
+        }
+    }
+    let starNewName = prompt(" NHẬP VÀO 1 CHÒM SAO ");
+    let check = sao(starNewName);
+    if ( check ){
+        document.getElementById("result").innerText= check;
+    }else {
+        document.getElementById("result").innerText=" không tìm thấy kết quả ";
+    }
+</script>
+</body>
+</html>

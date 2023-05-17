@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_2_function2</title>
+</head>
+<body>
+<script>
+    function dt(r){
+        let sum1= 3.14 * r * r ;
+        return sum1 ;
+    }
+    function cv(n){
+        let sum2 = 3.14 * 2*n;
+        return sum2 ;
+    }
+    let banKinh = +prompt("nhập vào bán kính hình tròn");
+    let resulta = dt( banKinh );
+    let resultb = cv( banKinh );
+    alert ( " diện tích của hình tròn là :" + resulta);
+    alert ( " chu vi của hình tròn là : " + resultb) ;
+</script>
+</body>
+</html>

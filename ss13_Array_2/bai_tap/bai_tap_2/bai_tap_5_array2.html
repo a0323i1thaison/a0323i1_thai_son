@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_5</title>
+</head>
+<body>
+<script>
+    let mang1 = prompt("nhập vào giá trị mảng thứ 1");
+    let arr1 = [mang1];
+    let mang2 = prompt("nhập vào giá trị của mảng thứ 2 ");
+    let arr2 = [mang2];
+    for (i = 0; i < arr1.length; i++) {
+        for (j = 0; j < arr2.length; j++) {
+            if (arr1[i] !== arr2[j]) {
+                alert(" hai mảng không bằng nhau");
+            } else {
+                alert(" hai mảng bằng nhau");
+            }
+        }
+    }
+</script>
+</body>
+</html>
