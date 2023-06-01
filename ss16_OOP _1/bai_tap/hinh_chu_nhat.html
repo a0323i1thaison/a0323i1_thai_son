@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hinh_chu_nhat</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200px" height="300px" style = "border: blue"></canvas>
+<h1 id = "result"> </h1>
+<h1 id = "result1"></h1>
+<script>
+    class Rectangle {
+        constructor(height,width ){
+            this.height = height ;
+            this.width = width;
+        }
+       get dt(){
+            return this.height * this.width;
+       }
+       get cv(){
+            return 2 * (this.height + this.width);
+       }
+       draw(canvas){
+            let ctx = canvas.getContext("2d");
+            ctx.fillRect(1,1,this.width,this.height);
+       }
+    }
+    let myRectangle = new Rectangle(100,50);
+    myRectangle.draw(document.getElementById("myCanvas"));
+    myRectangle.height = 100;
+    myRectangle.width =200;
+    document.getElementById("result").innerText=" diện tích là :" + myRectangle.dt;
+    document.getElementById("result1").innerText="chu vi là :" + myRectangle.cv;
+</script>
+</body>
+</html>

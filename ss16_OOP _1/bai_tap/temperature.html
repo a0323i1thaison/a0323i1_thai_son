@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(celsius) {
+            this.celsius =celsius;
+        }
+        get celsius(){
+            return this.celsius ;
+        }
+        get dof(){
+            return this.celsius*9/5 + 32;
+        }
+        get dok(){
+            return this. celsius + 273.15;
+        }
+    }
+    let doC = +prompt ( " nhập vào nhiệt độ c ");
+    if ( doC < -273){
+        doC = +prompt ( " nhập lại độ c ");
+    }
+    let chuyenDoi = new Temperature(doC);
+    alert (" nhiêt độ F = " + chuyenDoi.getdof(doC));
+    alert (" nhiêt độ kelvin = " + chuyenDoi.getdok(doC));
+</script>
+</body>
+</html>

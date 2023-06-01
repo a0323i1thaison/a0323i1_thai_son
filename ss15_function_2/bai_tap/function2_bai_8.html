@@ -6,16 +6,13 @@
 </head>
 <body>
 <script>
-function arr(num){
-    let newNum = [];
-    for (let i = num.length - 1 ; i >= 0 ; i--){
-        newNum.push(num[i])
-    } return newNum;
-}
-let arr1 = +prompt ( " nhập vào 10 số nguyên ");
-let arr2 = [arr1];
-let arr3 = arr(arr2)
-    alert ( arr3);
+    function soNguyen(num){
+        return num.reverse();
+    }
+    let num = [ 23,4,6,7];
+    soNguyen(num);
+    alert (num);
+
 </script>
 </body>
 </html>
