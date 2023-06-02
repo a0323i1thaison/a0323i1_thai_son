@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>bai3-2</title>
 </head>
 <body>
-$END$
+<script>
+    let h = +prompt(" nhập vao chiều cao của tam giác cân")
+    for ( i = 1 ; i <= h ; i++){
+        for ( j = 1 ; j <= h - i; j++){
+                document.write("*");
+            }
+        }
+        for ( j = 1 ; j <= 2*i-1;j++ ){
+            document.write("&nbsp&nbsp");
+        }
+    }document.write("<br/>");
+</script>
 </body>
 </html>

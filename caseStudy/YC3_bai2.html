@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    function check(a, b) {
+        let numa = new Set(a);
+        let numb = [];
+
+        for (let i = 0; i < b.length; i++) {
+            let lenB = b[i];
+            if (!numa.has(lenB)) {
+                numb.push(lenB);
+                numa.add(lenB);
+            }
+        }
+
+        return numb;
+    }
+    let a = [2, 3, 4, 5, 6];
+    let b = [4, 5, 6, 7, 8];
+    let result = check(a, b);
+    document.write(result);
+
+</script>
 </body>
 </html>

@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>bai1</title>
 </head>
 <body>
-$END$
+<script>
+let h = +prompt("nhập vào chiều cao của tam giác ");
+    for (i = 1; i <= h; i++) {
+        for (j = 1; j <= i; j++) {
+            if ( i===1||i===h||j===1||j===i){
+                document.write("*") ;
+            }else {
+                document.write("&nbsp&nbsp");
+            }
+        }
+        document.write("<br/>");
+    }
+
+</script>
 </body>
 </html>

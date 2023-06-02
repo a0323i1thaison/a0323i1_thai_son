@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>bai2-2</title>
 </head>
 <body>
-$END$
+    <script>
+     let h = +prompt( " nhập vào độ cao của tam giác vuông cân ");
+     for ( i = 1 ; i <= h ; i++){
+         for ( j = 1 ; j <= h - i; j++){
+                 document.write("&nbsp&nbsp");
+             }
+         for ( j = 1 ; j <= 2*i-1;j++ ){
+                 document.write("*");
+             }document.write("<br/>");
+         }
+    </script>
 </body>
 </html>
