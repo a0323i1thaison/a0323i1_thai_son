@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai_tap_them</title>
+</head>
+<body>
+<script>
+    function findFibonacciNumbers(arr) {
+        // Tạo một mảng mới để lưu trữ các số Fibonacci
+        let fibonacciArr = [];
+
+        // Hàm kiểm tra xem một số có phải là số Fibonacci hay không
+        function isFibonacci(num) {
+            if (num === 0 || num === 1) {
+                return true;
+            }
+            let a = 0;
+            let b = 1;
+            while (b < num) {
+                let temp = b;
+                b = a + b;
+                a = temp;
+            }
+            return b === num;
+        }
+        // Duyệt qua từng phần tử trong mảng đầu vào
+        for (var i = 0; i < arr.length; i++) {
+            let num = arr[i];
+
+            // Kiểm tra nếu số hiện tại là số Fibonacci
+            if (isFibonacci(num)) {
+                fibonacciArr.push(num);
+            }
+        }
+        // Sắp xếp mảng fibonacciArr theo thứ tự tăng dần
+        fibonacciArr.sort(function (a, b) {
+            return a - b;
+        });
+        // Trả về mảng fibonacciArr
+        return fibonacciArr;
+    }
+    // Ví dụ sử dụng hàm
+    var inputArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    var result = findFibonacciNumbers(inputArray);
+    console.log(result); // Kết quả: [1, 2, 3, 5, 8]
+</script>
+</body>
+</html>
