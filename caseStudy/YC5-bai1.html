@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>bai-1</title>
 </head>
 <body>
-$END$
+<script>
+    function tinhTong(a, b) {
+        let sum = 0;
+
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] % 2 === 0) {
+                sum += a[i];
+            }
+        }
+
+        for (let i = 0; i < b.length; i++) {
+            if (b[i] % 2 === 0) {
+                sum += b[i];
+            }
+        }
+
+        return sum;
+    }
+
+    let a = [2, 4, 6, 3, 12, 24];
+    let b = [3, 5, 7, 16, 18, 22];
+    let result = tinhTong(a, b);
+    document.write("Tổng của hai mảng là: " + result);
+</script>
 </body>
 </html>

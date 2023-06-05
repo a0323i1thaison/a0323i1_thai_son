@@ -5,6 +5,20 @@
     <title>bai2_4</title>
 </head>
 <body>
-
+<script>
+    function kiemTra(a) {
+        let check = [];
+        for (let i = 0; i < a.length; i++) {
+            if (check.indexOf(a[i]) === -1) {
+                check.push(a[i]);
+            }
+        }
+        return check;
+    }
+    let a = ("abshduabsja");
+    let result = kiemTra(a);
+    document.write("Số lượng ký tự khác nhau: " + result.length);
+    document.write(" ký tự khác nhau: " + result);
+</script>
 </body>
 </html>

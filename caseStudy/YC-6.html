@@ -2,9 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title></title>
 </head>
 <body>
-$END$
+<button type="button" onclick="edit()"> Sửa Thông Tin Học viên</button>
+<button type="button" onclick="deleteStudent()"> Xóa Thông tin học viên</button>
+<button type="button" onclick="add()"> Thêm học viên</button>
+<p id="result"></p>
+<script>
+    class Student {
+        constructor(id, name, classS, email, birthDay, module) {
+            this.id = id;
+            this.name = name;
+            this.classS = classS;
+            this.email = email;
+            this.birthDay = birthDay;
+            this.module = module;
+        }
+
+        getId() {
+            return this.id;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getClassS() {
+            return this.classS;
+        }
+
+        getEmail() {
+            return this.email;
+        }
+
+        getBirthDay() {
+            return this.birthDay;
+        }
+
+        getModule() {
+            return this.module;
+        }
+    }
+
+    function display() {
+        let table = '<table border="1">\n' +
+            ' <tr>\n' +
+            '<th> Mã Học Viên</th>\n' +
+            '<th> Tên</th>\n' +
+            '<th> Lớp</th>\n' +
+            '<th> Email</th>\n' +
+            '<th> Ngày Sinh</th>' +
+            '<th> Module </th>' +
+            '</tr>';
+        for (let i = 0; i < st.length; i++) {
+            table += ' <tr>';
+            table += '<td>' + st[i].getId() + '</td>\n' +
+                '<td>' + st[i].getName() + '</td>\n' +
+                '<td>' + st[i].getClassS() + '</td>\n' +
+                '<td>' + st[i].getEmail() + '</td>\n' +
+                '<td>' + st[i].getBirthDay() + '</td>\n' +
+                '<td>' + st[i].getModule() + '</td>\n' +
+                '</tr>';
+        }
+        table += '</table>\n';
+        document.getElementById("result").innerHTML = table;
+    }
+
+    // sửa một học viên mới
+    function edit() {
+        let id = prompt ("nhập vào id học viên cần sửa");
+        let checkId = id;
+        for (let i = 0;i < st.length; i++) {
+            if (st[i].getId() === checkId) {
+                let id = prompt(" nhập vào id ");
+                let name = prompt(" nhập vào name ");
+                let class1 = prompt(" nhập vào class ");
+                let email = prompt(" nhập vào email ");
+                let birthDay = prompt(" nhập vào ngày sinh ");
+                let module = prompt(" nhập vào module ");
+                let student = new Student (id, name, class1, email, birthDay, module);
+                st.push(student);
+            }else if(st[i].getId() !== checkId){
+                alert (" mã sinh viên không xác định ");
+            }
+        }
+        display(st);
+    }
+    // xóa một học viên
+    function deleteStudent() {
+        let id = prompt (" nhập vào id bạn muốn xóa ");
+        let checkId = id;
+        for (let i = 0; i < st.length; i++) {
+            if (st[i].getId() === checkId) {
+                st.splice(i, 1);
+            }
+            if (st[i].getId() !== checkId ){
+                alert (" mã sinh viên không xác định ");
+            }
+        }
+        display(st);
+    }
+
+    // thêm một học viên
+    function add() {
+        let id = prompt(" nhập vào id ");
+        let name = prompt(" nhập vào name ");
+        let class1 = prompt(" nhập vào class ");
+        let email = prompt(" nhập vào email ");
+        let birthDay = prompt(" nhập vào ngày sinh ");
+        let module = prompt(" nhập vào module ");
+        let student = new Student (id, name, class1, email, birthDay, module);
+        st.push(student);
+        display(st);
+    }
+
+    let st1 = new Student("HV-0001", "nguyen van a ", " C1022G1", "nguyenvana@gmail.com", "01/01/2004", "module1");
+    let st2 = new Student("HV-0002", "nguyen van b ", " C2022G1", "nguyenvanb@gmail.com", "01/02/2004", "module1");
+    let st3 = new Student("HV-0003", "nguyen van c ", " C3022G1", "nguyenvanc@gmail.com", "01/01/2004", "module1");
+    let st = [];
+    st.push(st1, st2, st3);
+    display(st);
+</script>
 </body>
 </html>

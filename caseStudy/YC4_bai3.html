@@ -5,6 +5,22 @@
     <title>bai3_4</title>
 </head>
 <body>
+<script>
+    function kiemTra(a, b) {
+        let result = [];
+        for (let i = 0; i < a.length; i++) {
+            if (b.indexOf(a[i]) !== -1 && result.indexOf(a[i]) === -1) {
+                result.push(a[i]);
+            }
+        }
+        return result;
+    }
 
+    let a = "abcdef";
+    let b = "acefgh";
+    let result = kiemTra(a, b);
+    document.write("Số lượng ký tự giống nhau: " + result.length);
+    document.write(" Ký tự giống nhau: " + result);
+</script>
 </body>
 </html>
